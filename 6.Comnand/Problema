@@ -1,0 +1,5 @@
+6. Command: Essa questão trata-se de uma abstração de um joystick. Use o padrão
+Command pra interagir com diferentes jogos. O joystick possui 2 botões: A e B (os direcionais
+são omitidos pois para o exemplo os botões de ação são suficientes). Os receptores são os
+jogos, que executarão diferentes ações pra mesma tecla pressionada. Exemplo: o botão X fazcorrer no jogo de futebol, acelera no de corrida e chuta alto no de luta. Implemente o código
+para 3 jogos (futebol, corrida e luta).

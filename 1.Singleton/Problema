@@ -1,0 +1,31 @@
+1. Singleton: Uma boa prática no desenvolvimento de aplicações é o registro de exceções,
+de informações de controle ou de segurança nas aplicações. Chamamos isso de Log da
+aplicação. Uma aplicação não precisa ter mais do que uma classe gerando e registrando as
+informações do log. Nesse contexto, o padrão de projeto Singleton pode ser implementado.
+Portanto, aplique esse padrão nas classes apresentadas a seguir. A classe Logger usa a
+variável ativo para indicar se as informações podem ser exibidas, enquanto que a classe
+Aplicacao é a classe que utiliza dois objetos de tipo Logger.
+
+public class Logger {
+private boolean ativo = false;
+public Logger() {}
+public boolean isAtivo() {
+return this.ativo;
+}
+public void setAtivo(boolean b) {
+this.ativo = b;
+}
+public void log(String s) {
+if(this.ativo)
+System.out.println("LOG :: " + s);
+}
+}
+public class Aplicacao {
+public static void main(String[] args) {
+Logger log1 = new Logger();
+log1.setAtivo(true);
+log1.log("PRIMEIRA MENSAGEM DE LOG");
+Logger log2 = new Logger();
+log2.log("SEGUNDA MENSAGEM DE LOG");
+}
+}
