@@ -4,9 +4,9 @@ public class Cliente {
 
 		Lista lista = new Lista();
 
-		lista.adicionarItem("Magalhães");
-		lista.adicionarItem("Pacheco");
-		lista.adicionarItem("Victor");
+		lista.adicionarItem("João");
+		lista.adicionarItem("Silva");
+		lista.adicionarItem("Morais");
 
 		ListaAbstrata listaAbstrata = new ListaOrdenada(new ListaItensNumeros());
 		listaAbstrata.imprimir(lista);
