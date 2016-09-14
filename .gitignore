@@ -1,3 +1,5 @@
 .classpatch
 .project
 .settings
+/bin
+/src
