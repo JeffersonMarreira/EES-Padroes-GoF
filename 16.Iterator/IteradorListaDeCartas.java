@@ -26,11 +26,6 @@ public class IteradorListaDeCartas implements IteradorInterface{
 		return lista.get(0);
 	}
 
-	/*@Override
-	public void colocarNoFinal(ArrayList<Carta> cartas) {
-		lista.removeAll(cartas);
-		lista.addAll(cartas);
-	}*/
 
 	@Override
 	public void colocarNoFinal(Carta carta) {

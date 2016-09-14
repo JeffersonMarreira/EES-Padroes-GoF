@@ -40,8 +40,6 @@ public class IteradorPilhaDeCartas implements IteradorInterface{
 			index++;
 		}
 		this.pilha = vetorAux;
-
-		//this.pilha[pilha.length] = carta;
 	}
 
 	@Override
@@ -54,19 +52,6 @@ public class IteradorPilhaDeCartas implements IteradorInterface{
 		contador = 0;
 	}
 
-	/*
-	@Override
-	public void colocarNoFinal(Carta[] cartas) {
-		for (int i=0; i<cartas.length;i++){
-			remover(cartas[i]);
-		}
-
-		for (int j=0; j<cartas.length;j++){
-			adicionar(cartas[j]);
-		}
-
-	}*/
-
 	@Override
 	public void colocarNoFinal(Carta carta) {
 		remover(carta);
@@ -77,8 +62,6 @@ public class IteradorPilhaDeCartas implements IteradorInterface{
 	public void next() {
 		contador++;
 	}
-
-
 
 	@Override
 	public boolean isDone() {

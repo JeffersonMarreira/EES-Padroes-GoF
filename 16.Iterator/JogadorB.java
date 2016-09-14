@@ -1,9 +1,6 @@
 
 import java.util.Random;
 
-/**
- * Created by Igor on 20/08/2016.
- */
 public class JogadorB implements AgregadorDeCartas {
 
     protected Carta[] cartas;

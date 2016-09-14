@@ -18,7 +18,4 @@ public interface IteradorInterface {
 
     void colocarNoFinal(Carta carta);
 
-
-
-
 }

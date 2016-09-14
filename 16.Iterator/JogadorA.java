@@ -2,9 +2,6 @@
 import java.util.ArrayList;
 import java.util.Random;
 
-/**
- * Created by Igor on 20/08/2016.
- */
 public class JogadorA implements AgregadorDeCartas {
 
     protected ArrayList<Carta> cartas;
